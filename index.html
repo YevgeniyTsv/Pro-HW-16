@@ -8,8 +8,10 @@
     <script>
         // ЗАДАНИЯ ДЛЯ РАЗМИНКИ!!!!!!)))
 
-
+        let taskNumber = 0;
         //1) Есть три обьекта организовать цепочку таким образом чтобы обьект obj1 был родилем obj2, obj2 родителем obj3
+        console.warn(`Task # ${++taskNumber}`);
+
         const obj1 = {
             name: 'Sergei',
             lastName: 'Shakhov'
@@ -25,6 +27,12 @@
             lastName: 'Ivanov'
         };
 
+         obj2.__proto__ = obj1;
+         obj3.__proto__ = obj2;
+
+        console.log(obj3.__proto__);
+        console.log(obj2.__proto__);
+        
 
 
         // 2) Ну еще одна тренировочка  
@@ -36,6 +44,8 @@
         // Сделать с помощью then и async await!
         // НЕ ЗНАЕТЕ КАК СДЕЛАТЬ POST, DELETE запросы ? ТОЖЕ САМОЕ ЧТО И С GET, только нужно немного пеменять и добавить кое-что !
         //  Ставим вас в боевую обстановку нужно загуглить как, если не получиться тогда я подскажу!
+        console.warn(`Task # ${++taskNumber}`);
+
         let order = {
             creationDate: "2019-04-07T19:14:55.964Z",
             agentName: "shakhovserge@gmail.com",// здесь введите лучше какой-то другой эмеил!
